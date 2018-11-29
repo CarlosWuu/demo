@@ -5,26 +5,20 @@ import com.example.demo.dao.repository.UserRepository;
 import com.example.demo.dao.vo.User;
 import com.example.demo.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 @SpringBootApplication
-//@PropertySource("demo.properties")
 @Controller
 public class DemoApplication {
-	/*@Value("${cls.name}")
-	private String name;*/
 
 	@Autowired
 	private PropertiesBean propertiesBean;
